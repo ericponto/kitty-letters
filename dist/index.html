@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Kitty Letters</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: #ccf9ff;
+        font-family: "Gloria Hallelujah", serif;
+      }
+      h1 {
+        text-align: center;
+        color: #224449;
+        font-size: 5vw;
+        margin: 0.125em 0;
+      }
+      .wrapper {
+        margin: 1em auto;
+        max-width: 768px;
+        padding: 48px;
+        background: #fff;
+      }
+      #game {
+        width: 768px;
+        margin: 0;
+      }
+      canvas {
+        display: block;
+        margin: 0;
+      }
+      .credits {
+        color: #555;
+        font-size: 14px;
+        text-align: right;
+        margin: 0.5em 0 0;
+      }
+
+      .credits img {
+        height: 14px;
+        width: 14px;
+      }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-141104412-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-141104412-2");
+    </script>
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <h1>Kitty Letters</h1>
+    <div class="wrapper">
+      <div id="game"></div>
+      <p class="credits">
+        Made with <img alt="love" src="./assets/heart.png" /> by EllieKat (and
+        Dad)
+      </p>
+    </div>
+  </body>
+</html>
